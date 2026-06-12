@@ -39,7 +39,7 @@
         .hero p { font-size: 18px; color: #A0AEC0; font-weight: 300; max-width: 750px; margin: 0 auto 35px; line-height: 1.6; }
         
         /* Кнопки премиум-класса */
-        .btn-gold { display: inline-block; background: linear-gradient(135deg, #C9A84A 0%, #AA8932 100%); color: #1A2A50; padding: 16px 40px; text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 1.5px; transition: 0.3s; box-shadow: 0 4px 15px rgba(201, 168, 74, 0.2); }
+        .btn-gold { display: inline-block; background: linear-gradient(135deg, #C9A84A 0%, #AA8932 100%); color: #1A2A50; padding: 16px 40px; text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 1.5px; transition: 0.3s; box-shadow: 0 4px 15px rgba(201, 168, 74, 0.2); text-align: center; }
         .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201, 168, 74, 0.4); }
 
         .container { padding: 40px 5% 60px; max-width: 1100px; margin: 0 auto; }
@@ -59,14 +59,26 @@
         .story-status { font-size: 13px; color: #A0AEC0; text-transform: uppercase; letter-spacing: 2px; margin-top: 5px; font-weight: 600; }
         
         .story-info { flex: 1.6; min-width: 320px; }
-        .story-quote { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #FFF; margin-bottom: 20px; font-weight: 400; border-left: 4px solid var(--gold); padding-left: 20px; line-height: 1.4; }
-        .story-text { color: #CBD5E0; font-size: 16px; line-height: 1.8; font-weight: 300; }
+        .story-quote { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #FFF; margin-bottom: 20px; font-weight: 400; border-left: 4px solid var(--gold); padding-left: 20px; line-height: 1.4; text-align: left; }
+        .story-text { color: #CBD5E0; font-size: 16px; line-height: 1.8; font-weight: 300; text-align: left; }
         .story-text p { margin-bottom: 15px; }
 
-        .result-badge { background: linear-gradient(135deg, rgba(91, 45, 142, 0.15) 0%, rgba(26, 42, 80, 0.4) 100%); border: 1px dashed var(--gold); padding: 20px; border-radius: 12px; margin: 25px 0; border-left: 5px solid var(--gold); }
+        .result-badge { background: linear-gradient(135deg, rgba(91, 45, 142, 0.15) 0%, rgba(26, 42, 80, 0.4) 100%); border: 1px dashed var(--gold); padding: 20px; border-radius: 12px; margin: 25px 0; border-left: 5px solid var(--gold); text-align: left; }
         .result-badge .badge-label { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold-light); display: block; margin-bottom: 4px; font-weight: 600; }
         .result-badge .badge-value { font-size: 20px; color: #FFF; font-weight: 600; }
         .result-badge .badge-value span { color: var(--gold-light); font-weight: 700; }
+
+        /* Дополнительные премиум-секции */
+        .premium-section { background: var(--glass); border: 1px solid var(--border-glass); padding: 45px 30px; border-radius: 24px; margin-bottom: 60px; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); text-align: center; }
+        .premium-section h2 { font-size: 32px; color: var(--gold); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        .premium-section p { font-size: 16px; color: #E2E8F0; max-width: 800px; margin: 0 auto 30px; line-height: 1.6; font-weight: 300; }
+        
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; text-align: left; }
+        .feature-card { background: rgba(15, 26, 52, 0.5); padding: 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); }
+        .feature-card.bordered { border-left: 4px solid var(--gold); }
+        .feature-card span { font-size: 30px; display: block; margin-bottom: 10px; }
+        .feature-card h4 { color: #FFF; font-size: 18px; margin-bottom: 10px; letter-spacing: 0.5px; }
+        .feature-card p { font-size: 14px; color: #A0AEC0; line-height: 1.6; margin: 0; }
 
         /* Сетка продукции */
         .grid-products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px; }
@@ -88,7 +100,7 @@
         /* Блок QR-кода */
         .qr-box { background: var(--glass); border: 1px solid var(--border-glass); text-align: center; margin: 0 auto 20px; padding: 25px; border-radius: 16px; max-width: 280px; backdrop-filter: blur(5px); }
         .qr-box h3 { color: var(--gold-light); font-size: 18px; margin-bottom: 12px; font-weight: 400; letter-spacing: 0.5px; }
-        .qr-box img { width: 100%; max-width: 180px; height: auto; border: 1px solid var(--border-glass); padding: 6px; background: rgba(255,255,255,0.9); border-radius: 8px; }
+        .qr-box img { width: 100%; max-width: 180px; height: auto; border: 1px solid var(--border-glass); padding: 6px; background: rgba(255,255,255,0.9); border-radius: 8px; display: block; margin: 0 auto; }
         .qr-box p { font-size: 12px; color: #718096; margin-top: 10px; font-weight: 300; line-height: 1.4; }
 
         /* Подвал */
@@ -102,13 +114,13 @@
             .hero h1 { font-size: 34px; }
             .hero p { font-size: 15px; }
             .story-wrapper { padding: 25px; gap: 25px; }
+            .premium-section h2, .reviews-box h2 { font-size: 26px; }
             .section-title h2 { font-size: 28px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- НАВИГАЦИЯ -->
     <nav>
         <a href="index.html" class="logo">M <span>INTERNATIONAL</span></a>
         <ul>
@@ -120,7 +132,6 @@
         </ul>
     </nav>
 
-    <!-- ГЛАВНЫЙ БАННЕР -->
     <section class="hero">
         <h1>Мы мост к Вашей Мечте!</h1>
         <p>Высококачественные продукты для восстановления здоровья на клеточном уровне и легкая международная платформа для создания вашего стабильного благосостояния.</p>
@@ -129,7 +140,6 @@
 
     <div class="container">
 
-        <!-- СЕКЦИЯ: ИСТОРИЯ ОСНОВАТЕЛЯ -->
         <div class="section-title">
             <h2>История Основателя Команды</h2>
             <p>От личного результата до построения международной структуры</p>
@@ -151,17 +161,17 @@
                 </h4>
                 
                 <div class="story-text">
-                    <p>Мне дали попробовать несколько саше клеточного флагманского продукта<strong style="color: var(--gold-light); font-weight: 600;">GreenMAX,</strong>Fleximax <strong style="color: var(--gold-light); font-weight: 600;">и Mimax</strong>. Я попробовала продукты, результаты не заставили себя долго ждать утром я уже поняла, что продукты компании это то, чего мне не хватало все это время.</p>
-                    <p> со временем я почувствовала легкость, подвижность в суставах и желание жить.</p>
+                    <p>Мне дали попробовать несколько саше клеточного флагманского продукта <strong style="color: var(--gold-light); font-weight: 600;">GreenMAX, Fleximax и Mimax</strong>. Я попробовала продукты, результаты не заставили себя долго ждать — утром я уже поняла, что продукты компании это то, чего мне не хватало все это время.</p>
+                    <p>Со временем я почувствовала легкость, подвижность в суставах и желание жить.</p>
                     <p>Но когда я ознакомилась с маркетинг-планом <strong>M International</strong>, я увидела здесь деньги и огромные возможности для бизнеса.</p>
                     
                     <div class="result-badge">
                         <span class="badge-label">Бизнес-результат команды:</span>
-                        <span class="badge-value">недавно я закрыла ранг «САПФИР» и суммарный доход <span>2 864 400 ₸</span> свободно, без усилий!</span>
+                        <span class="badge-value">Недавно я закрыла ранг «САПФИР» и суммарный доход <span>2 864 400 ₸</span> свободно, без усилий!</span>
                     </div>
 
-                    <p>Для меня это не просто клеточное питание 21 векая — это возможность продвигать свой бизнес и создавать свою команду. Уверена, что продукт имеет огромный потенциал и моя задача показать его всем<strong> поэтому я зову Вас в сильный, легальный бизнес!</strong></p>
-                    <p style="font-style: italic; color: var(--gold-light); font-weight: 400; margin-top: 20px;">«Приходите в мою команду! Я и наша команда научит Вас профессионально работать в социальных сетях, проведёт топовые занятия по саморазвитию и поможет раскрыть масштабный потенциал Вашей личности. Я стану Вам надежным мостом к Вашим мечтам!»</p>
+                    <p>Для меня это не просто клеточное питание 21 века — это возможность продвигать свой бизнес и создавать свою команду. Уверена, что продукт имеет огромный потенциал и моя задача показать его всем, <strong>поэтому я зову Вас в сильный, легальный бизнес!</strong></p>
+                    <p style="font-style: italic; color: var(--gold-light); font-weight: 400; margin-top: 20px;">«Приходите в мою команду! Я и наша команда научит Вас профессионально работать в социальных сетях, проведёт топовые занятия по саморазвитию и поможет раскрыть масштабный потенциал Вашей личности. Я станут Вам надежным мостом к Вашим мечтам!»</p>
                 </div>
                 
                 <div style="margin-top: 30px;">
@@ -170,65 +180,53 @@
             </div>
         </div>
 
-<section class="section" style="background: linear-gradient(180deg, rgba(15, 26, 52, 0.2) 0%, rgba(21, 37, 72, 0.4) 100%); padding: 40px 20px; border-radius: 12px; margin: 40px 0; border: 1px solid var(--border-glass);">
-    <div class="container" style="text-align: center;">
-        <h2 style="color: var(--accent-gold); font-size: 28px; margin-bottom: 15px;">🌍 Международный Бизнес без Границ</h2>
-        <p style="font-size: 16px; color: #E2E8F0; max-width: 800px; margin: 0 auto 25px auto; line-height: 1.6; font-weight: 300;">
-            Наш официальный офис находится в Актобе (Казахстан), но мы строим команду и развиваем бизнес **по всему миру**. Если вы находитесь в странах СНГ, Европы, Азии или Америки — это не преграда для нашего сотрудничества.
-        </p>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 25px;">
-            <div style="background: rgba(15, 26, 52, 0.6); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-                <span style="font-size: 30px;">✈️</span>
-                <h4 style="color: var(--accent-gold); margin: 10px 0 5px 0;">Глобальная Доставка</h4>
-                <p style="font-size: 14px; color: #A0AEC0;">Быстрая и надежная отправка сертифицированной продукции в любую точку земного шара.</p>
+        <div class="premium-section">
+            <h2>🌍 Международный Бизнес без Границ</h2>
+            <p>Наш официальный офис находится в Актобе (Казахстан), но мы строим команду и развиваем бизнес <strong>по всему миру</strong>. Если вы находитесь в странах СНГ, Европы, Азии или Америки — это не преграда для нашего сотрудничества.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <span>✈️</span>
+                    <h4>Глобальная Доставка</h4>
+                    <p>Быстрая и надежная отправка сертифицированной продукции в любую точку земного шара.</p>
+                </div>
+                <div class="feature-card">
+                    <span>💻</span>
+                    <h4>Онлайн Регистрация</h4>
+                    <p>Дистанционное оформление в международную команду холдинга за 5 минут.</p>
+                </div>
+                <div class="feature-card">
+                    <span>🤝</span>
+                    <h4>Удаленное Обучение</h4>
+                    <p>Пошаговая система запуска бизнеса, онлайн-презентации и поддержка 24/7.</p>
+                </div>
             </div>
-            <div style="background: rgba(15, 26, 52, 0.6); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-                <span style="font-size: 30px;">💻</span>
-                <h4 style="color: var(--accent-gold); margin: 10px 0 5px 0;">Онлайн Регистрация</h4>
-                <p style="font-size: 14px; color: #A0AEC0;">Дистанционное оформление в международную команду холдинга за 5 минут.</p>
-            </div>
-            <div style="background: rgba(15, 26, 52, 0.6); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-                <span style="font-size: 30px;">🤝</span>
-                <h4 style="color: var(--accent-gold); margin: 10px 0 5px 0;">Удаленное Обучение</h4>
-                <p style="font-size: 14px; color: #A0AEC0;">Пошаговая система запуска бизнеса, онлайн-презентации и поддержка 24/7.</p>
+
+            <p style="font-size: 15px; color: #A0AEC0; margin-bottom: 20px;">Хотите стать партнером в своей стране или заказать продукт с доставкой?</p>
+            <a href="https://wa.me/77473573171" target="_blank" class="btn-gold">🚀 Связаться с Топ-Координатором</a>
+        </div>
+
+        <div class="premium-section">
+            <h2>🌟 Наша Главная Изюминка — Революция в Клеточном Питании</h2>
+            <p>Мы не предлагаем обычные витамины или временные решения. Продукция M International работает на <strong>клеточном уровне</strong>, устраняя саму причину сбоев в организме.</p>
+
+            <div class="feature-grid">
+                <div class="feature-card bordered">
+                    <h4>🎯 Точечное попадание</h4>
+                    <p>Компоненты FlexiMAX и Ye-Katerina моментально усваиваются организмом и направляются именно туда, где требуется срочное восстановление и защита.</p>
+                </div>
+                <div class="feature-card bordered">
+                    <h4>🌿 100% Чистая Органика</h4>
+                    <p>В составе только редкие растительные экстракты (Labisia Pumila, Pueraria Mirifica, куркума), созданные самой природой и усиленные наукой.</p>
+                </div>
+                <div class="feature-card bordered">
+                    <h4>⚡ Результат, который видно</h4>
+                    <p>Люди получают первые ощутимые изменения в самочувствии уже в первые недели применения, что делает этот продукт лучшей основой для стабильного бизнеса.</p>
+                </div>
             </div>
         </div>
 
-        <p style="font-size: 15px; color: #A0AEC0; margin-bottom: 20px;">Хотите стать партнером в своей стране или заказать продукт с доставкой?</p>
-        <a href="https://wa.me/77473573171" target="_blank" class="cta-btn" style="display: inline-block; padding: 12px 30px; text-decoration: none; font-weight: 600;">
-            🚀 Связаться с Топ-Координатором (WhatsApp)
-        </a>
-    </div>
-</section>
-   </section>
-
-<section class="section" style="padding: 50px 20px; background: rgba(255, 255, 255, 0.02); border-radius: 12px; margin: 30px 0; border: 1px solid rgba(212, 175, 55, 0.1);">
-    <div class="container" style="text-align: center;">
-        <h2 style="color: var(--accent-gold); font-size: 28px; margin-bottom: 10px;">🌟 Наша Главная Изюминка — Революция в Клеточном Питании</h2>
-        <p style="font-size: 16px; color: #E2E8F0; max-width: 750px; margin: 0 auto 30px auto; line-height: 1.6; font-weight: 300;">
-            Мы не предлагаем обычные витамины или временные решения. Продукция M International работает на **клеточном уровне**, устраняя саму причину сбоев в организме.
-        </p>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; text-align: left;">
-            <div style="background: rgba(15, 26, 52, 0.5); padding: 25px; border-radius: 10px; border-left: 4px solid var(--accent-gold);">
-                <h4 style="color: #fff; margin-bottom: 10px; font-size: 18px;">🎯 Точечное попадание</h4>
-                <p style="font-size: 14px; color: #A0AEC0; line-height: 1.5;">Компоненты FlexiMAX и Ye-Katerina моментально усваиваются организмом и направляются именно туда, где требуется срочное восстановление и защита.</p>
-            </div>
-            <div style="background: rgba(15, 26, 52, 0.5); padding: 25px; border-radius: 10px; border-left: 4px solid var(--accent-gold);">
-                <h4 style="color: #fff; margin-bottom: 10px; font-size: 18px;">🌿 100% Чистая Органика</h4>
-                <p style="font-size: 14px; color: #A0AEC0; line-height: 1.5;">В составе только редкие растительные экстракты (Labisia Pumila, Pueraria Mirifica, куркума), созданные самой природой и усиленные наукой.</p>
-            </div>
-            <div style="background: rgba(15, 26, 52, 0.5); padding: 25px; border-radius: 10px; border-left: 4px solid var(--accent-gold);">
-                <h4 style="color: #fff; margin-bottom: 10px; font-size: 18px;">⚡ Результат, который видно</h4>
-                <p style="font-size: 14px; color: #A0AEC0; line-height: 1.5;">Люди получают первые ощутимые изменения в самочувствии уже в первые недели применения, что делает этот продукт лучшей основой для стабильного бизнеса.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="products" class="section">     
-        <!-- СЕКЦИЯ: ФЛАГМАНЫ ПРОДУКЦИИ -->
-        <div class="section-title">
+        <div class="section-title" id="products">
             <h2>Флагманы Клеточного Питания</h2>
             <div class="decor-line"></div>
         </div>
@@ -251,7 +249,6 @@
             </div>
         </div>
 
-        <!-- ОТЗЫВЫ В TELEGRAM -->
         <div class="reviews-box">
             <div style="font-size: 40px; margin-bottom: 15px;">🔥</div>
             <h2>Результаты применения и Отзывы</h2>
@@ -260,7 +257,6 @@
             <p style="font-size: 12px; color: #718096; margin-top: 15px; font-style: italic;">* Ссылка откроет наш официальный канал с видео-подтверждениями результатов и разборы программ клеточного питания.</p>
         </div>
 
-        <!-- QR-КОД -->
         <div class="qr-box">
             <h3>Наш QR-код</h3>
             <img src="QR.jpg" alt="QR-код сайта">
@@ -269,16 +265,15 @@
 
     </div>
 
-    <!-- ПОДВАЛ -->
     <footer>
-    <div style="max-width: 800px; margin: 0 auto 15px auto; padding: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); border-radius: 6px; font-size: 12px; color: #a0aec0; letter-spacing: 0.5px;">
-        ⚠️ <strong>Важное примечание:</strong> Продукция M International (Greenmax, Bluemax, Fleximax и др.) является клеточным питанием, натуральными оздоровительными комплексами и не является лекарственным средством. Перед применением рекомендуется ознакомиться с инструкцией. Результаты могут отличаться в зависимости от индивидуальных особенностей организма.
-    </div>
-    <p style="font-size: 13px; color: #718096; margin-top: 10px;">
-        © 2026 M International Казахстан. Официальное представительство в г. Актобе. <br>
-        Работаем удаленно и доставляем продукцию по всему миру.
-    </p>
-</footer>
+        <div style="max-width: 800px; margin: 0 auto 15px auto; padding: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); border-radius: 6px; font-size: 12px; color: #a0aec0; letter-spacing: 0.5px; text-align: center;">
+            ⚠️ <strong>Важное примечание:</strong> Продукция M International (Greenmax, Bluemax, Fleximax и др.) является клеточным питанием, натуральными оздоровительными комплексами и не является лекарственным средством. Перед применением рекомендуется ознакомиться с инструкцией. Результаты могут отличаться в зависимости от individualных особенностей организма.
+        </div>
+        <p style="font-size: 13px; color: #718096; margin-top: 10px;">
+            © 2026 M International Казахстан. Официальное представительство в г. Актобе. <br>
+            Работаем удаленно и доставляем продукцию по всему миру.
+        </p>
+    </footer>
 
 </body>
 </html>
